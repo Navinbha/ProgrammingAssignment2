@@ -2,7 +2,8 @@
 ## functions do
 
 ## Write a short comment describing this function
-
+## The makeCacheMatrix function makes the special list that can cache the
+## inverse of a matrix. It will be used later on by the cacheSolve function
 makeCacheMatrix <- function(x = matrix()) {
         invmat <- NULL
         setmatrix <- function(y) {
@@ -20,7 +21,8 @@ makeCacheMatrix <- function(x = matrix()) {
 
 
 ## Write a short comment describing this function
-
+## The CacheSolve function computes the inverse of the special matrix
+## created by makeCacheMatrix
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
         invmat <- x$getinverse()
